@@ -3,4 +3,4 @@
 Track popular cryptocurrencies
 
 ## live demo
- https://crytotracker.netlify.app/
+ https://thecryptotrackerr.netlify.app/
