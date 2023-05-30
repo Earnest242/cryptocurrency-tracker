@@ -3,12 +3,12 @@ import React, { createContext, useContext, useEffect, useState } from "react";
 const Crypto = createContext();
 
 const CryptoContext = ({ children }) => {
-  const [currency, setCurrency] = useState("KES");
-  const [symbol, setSymbol] = useState("KES");
+  const [currency, setCurrency] = useState("USD");
+  const [symbol, setSymbol] = useState("$");
 
   useEffect(() => {
-    if (currency === "KES") setSymbol("KES₹");
-    else if (currency === "USD") setSymbol("$");
+    if (currency === "USD") setSymbol("$");
+    else if (currency === "KES") setSymbol("Ksh:");
   }, [currency]);
 
   return (
